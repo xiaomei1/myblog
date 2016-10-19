@@ -1,0 +1,288 @@
+
+
+body{
+	padding-top: 50px;
+  	padding-bottom: 20px;
+	background-color: #ccc;
+
+}
+
+.content{
+	
+	margin-top: 35px;
+
+}
+
+.box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.box.box-primary {
+    border-top-color: #3c8dbc;
+}
+
+.box-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+}
+
+.profile-user-img {
+    margin: 0 auto;
+    width: 100px;
+    padding: 3px;
+    border: 3px solid #d2d6de;
+}
+
+.text-color{
+	color: #333;
+}
+
+.list-group-unbordered>.list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-tabs-custom {
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+.nav-tabs-custom>.nav-tabs {
+    margin: 0;
+    border-bottom-color: #f4f4f4;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+
+.nav-tabs-custom>.tab-content {
+    background: #fff;
+    padding: 10px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+
+.post {
+    border-bottom: 1px solid #d2d6de;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    color: #666;
+}
+
+.post .user-block {
+    margin-bottom: 15px;
+}
+
+
+
+.user-block img {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.img-bordered-sm {
+    border: 2px solid #d2d6de;
+    padding: 2px;
+}
+.img-circle {
+    border-radius: 50%;
+}
+
+.user-block .username {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.user-block .username, .user-block .description, .user-block .comment {
+    display: block;
+    margin-left: 50px;
+}
+
+.box-content{
+	border-radius: 3px;
+}
+
+
+.list-group-item-color{
+	background-color: #428bca;
+
+}
+
+.list-item{
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+
+}
+.list-item1{
+	
+	font-size: 14px;
+	text-align: center;
+
+}
+
+.navbar-skin{
+	background-color: #3c8dbc;
+    border-color: #357ebd;
+}
+
+.navbar-nav>li>a{
+	color: #fff;
+}
+
+.navbar-header>a{
+	color: #fff;
+}
+
+.text-sm {
+    font-size: 12px;
+}
+
+.text-lg{
+	font-size: 25px;
+}
+
+
+.box-like{
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+
+}
+.box-center{
+	text-align: center;
+	padding: 6px;
+}
+.box-color{
+	background-color:#428bca;
+	color: #fff;
+}
+
+.box-like hr{
+	margin-top: 0px;
+	margin-bottom:0px;
+}
+
+.footer{
+	background-color: #fff;
+	padding: 15px;
+	color: #444;
+	border-top:1px solid #d2d6de;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align:center;
+
+}
+
+
+/*login*/
+.login-box{
+    width: 360px;
+    margin: 9% auto;   
+}
+
+.login-logo{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    font: 300;
+}
+.login-body{
+
+    background-color: #fff;
+    padding:40px 20px 20px 20px;
+    color: #666;
+}
+
+
+.has-feedback{
+    position: relative;
+}
+
+.form-control-feedback{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    
+}
+
+/*post*/
+.form-margin{
+    margin-bottom: 10px;
+}
+
+.btn-larger{
+    width: 30%;
+}
+
+/*comment*/
+
+.form-large{
+    border: 3px solid #666;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 5px;
+    color: #666;
+    width: 70%;
+}
+
+/*page*/
+.prepage a{
+    float:left;
+    text-decoration:none;
+    padding:.5em 1em;
+    color:#ff0000;
+    font-weight:bold;
+}
+.nextpage a{
+    float:right;
+    text-decoration:none;
+    padding:.5em 1em;
+    color:#ff0000;
+    font-weight:bold;
+}
+.prepage a:hover,.nextpage a:hover{
+    text-decoration:none;
+    background-color:#ff0000;
+    color:#f9f9f9;
+    -webkit-transition:color .2s linear;
+}
+
+/*avatar*/
+.left-head1{
+    float:left;
+    box-shadow:0px 1px 4px #888;
+}
+.left-head{
+    float:left;
+    margin-left:-4em;
+    box-shadow:0px 1px 4px #888;
+}

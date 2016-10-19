@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+html,body,.wrap{
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.top{
+	position: relative;
+	
+
+}
+.wrap .wrap-inner{
+   
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-30%);
+	width: 650px;
+
+}
+
+.col-xs-8{
+	float: left !important;
+
+}
+
+.btn-size{
+	line-height: 0.8;
+	font-size: 50px;
+	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.wrap .top{
+
+	background-color: pink;
+	background: url(/images/topbacground.jpg) no-repeat fixed;
+	background-size: cover;   
+
+	height: 95%;
+	color: #fff;
+}
+
+.wrap .bottom{
+	background-color: blue;
+	height: 5%;
+	color: #fff;
+	position: relative;
+
+}
+.wrap .bottom .middle{
+	position: absolute;
+	left: 50%;
+	top:50%;
+
+}
