@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	form(method='post')
+		.form-group
+			input.form-control.form-margin(type='text', name='title', placeholder='Post Title')
+			input.form-margin(type='text' name="tag1" placeholder='tag1')
+			input.form-margin(type='text' name="tag2" placeholder='tag2')
+			input.form-margin(type='text' name="tag3" placeholder='tag3')
+			textarea.form-control.form-margin(name='post', rows='20', cols='100')
+			button.btn.btn-primary.btn-block.btn-larger(type='submit') Create post

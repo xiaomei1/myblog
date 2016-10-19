@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    each post,index in posts
+      a(href='/user/#{post.name}')
+        img.left-head1(src='#{post.head}')
+      p
+        h2 
+          a(href="/user/#{post.name}/#{post.time.day}/#{post.title}") #{post.title}
+      p
+        |Author: 
+        a(href="/user/#{post.name}") #{post.name}
+        ||
+        |Date: #{post.time.minute}
+        ||
+        |Tag:
+        each tag,index in post.tags
+          if(tag)
+            a.tag(href='/tags/#{tag}') #{tag}
+      p #{post.post}
+      p Pageview: #{post.pv} | Comment: #{post.comments.length}
+     
+

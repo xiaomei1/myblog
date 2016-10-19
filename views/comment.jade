@@ -1,0 +1,25 @@
+each comment,index in post.comments
+	div(style='padding-left:4em')
+		p
+			img.left-head(src='#{comment.head}')
+			a(href="#{comment.website}") #{comment.name}
+			span Reply Time#{comment.time}
+		p #{comment.content}
+form.form-large(method="post")
+	if(user)
+		|Name:
+		input.form-control(type='text' name='name' value='#{user.name}')
+		|Email:
+		input.form-control(type='text' name='email' value='#{user.email}')
+		|Website:
+		input.form-control(type='text' name='website' value='/user/#{user.name}')
+	else
+		|Name:
+		input.form-control(type='text' name='name')
+		|Email:
+		input.form-control(type='text' name='email')
+		|Website:
+		input.form-control(type='text' name='website' value='http://')
+	textarea.form-control(name='content' rows='5' cols='40')
+	button.btn.btn-primary.btn-block.btn-larger(type='submit') save
+

@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .login-box
+    .login-logo
+      b Register
+    .login-body
+      form(action='/reg', method='post')
+        .form-group.has-feedback
+          input.form-control(type='text', placeholder='UserName',name='name')
+          span.icon-envelope.form-control-feedback
+        .form-group.has-feedback
+          input.form-control(type='password',name="password",placeholder='Password')
+          span.icon-lock.form-control-feedback
+        .form-group.has-feedback 
+          input.form-control(type='email',name="email",placeholder='Email')
+          span.icon-envelope.form-control-feedback
+        .row
+          .col-xs-8
+            .checkbox.icheck
+              label
+                input(type='checkbox',name='remember')
+                |  Remember Me
+          // /.col
+          .col-xs-4
+            button.btn.btn-primary.btn-block.btn-flat(type='submit') Sign In
+          // /.col

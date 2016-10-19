@@ -1,0 +1,66 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+    title=blog
+    link(rel='stylesheet', type='text/css', href='/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/dist/css/font-awesome.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+    script(src='/kindeditor/kindeditor-all.js')
+    script(src='/kindeditor/lang/zh-CN.js')
+    script.
+      var editor;
+      KindEditor.ready(function(K) {
+        editor = K.create('textarea[name="post"] ', {
+        allowImageUpload : false,
+        items : [
+          'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic',
+          'underline', 'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright',
+          'insertorderedlist', 'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+        });
+      });  
+  body
+    nav.navbar.navbar-skin.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') XM BOLG 
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/' title='home') Home
+            li
+              a(href='/archive') Archive
+            li
+              a(href='/tags') Tags
+            if (user)
+              li
+                a(href='/upload') Upload
+              li
+                a(href='/post') post
+              li
+                a(href='/logout') Logout           
+            else
+              li
+                a(href='/login') Login
+              li
+                a(href='/reg') Register            
+    if(success)
+      #{success}
+    if(error)
+       #{error}             
+   .container.content
+      
+        block content
+    .footer
+      strong
+        | Copyright © 2014-2015
+    script(type='text/javascript', src='/javascripts/jquery.min.js')
+    script(type='text/javascript', src='/javascripts/bootstrap.min.js')
+
+

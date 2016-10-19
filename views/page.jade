@@ -1,0 +1,7 @@
+div
+	if(!isFirstPage)
+		span.prepage
+			a(href="?p=#{page-1 }" title="prepage") Prepage
+	if(!isLastPage)
+		span.nextpage
+			a(href="?p=#{page+1 }" title="nextpage") Nextpage	

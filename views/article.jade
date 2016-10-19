@@ -1,0 +1,28 @@
+extends layout
+
+block content 
+	p
+		if(user &&(user.name==post.name))
+			span
+				a(href='/edit/#{post.name}/#{post.time.day}/#{post.title}') Edit
+			br
+			span
+				a(href='/remove/#{post.name}/#{post.time.day}/#{post.title}') Delete
+			br
+	p
+		|Author: 
+		a(href="/user/#{post.name}") #{post.name}
+		||
+		|Date: #{post.time.minute}
+	each tag,index in post.tags
+		if(tag)
+			a.tag(href='/tags/#{tag}') #{tag}
+	p #{post.post}
+	p Pageview: #{post.pv} | Comment: #{post.comments.length}
+	include comment
+
+
+
+	
+
+	
